@@ -12,10 +12,13 @@ def index():
 def autenticar():
     usuario = request.args.get('usuario')
     senha = request.args.get('senha')
+    curso = request.args.get('curso')
+    cidade = request.args.get('cidade')
     return render_template(
         'autenticar.html',
         usuario=usuario,
         senha=senha
+        
     )
 
 if __name__ == '__main__':
